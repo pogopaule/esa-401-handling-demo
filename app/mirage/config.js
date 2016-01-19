@@ -1,4 +1,10 @@
+import Mirage from 'ember-cli-mirage';
+
 export default function() {
+
+  this.get('/foos', () => {
+    return new Mirage.Response(401, {}, {});
+  });
 
   // These comments are here to help you get started. Feel free to delete them.
 
