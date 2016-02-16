@@ -12,6 +12,7 @@ export default Ember.Route.extend({
   actions: {
     error(error) {
       // error is 'true' because of https://github.com/simplabs/ember-simple-auth/blob/1.0.1/addon/mixins/data-adapter-mixin.js#L100 :(
+      console.error(`Error: ${error}`);
       debugger;
     }
   }
